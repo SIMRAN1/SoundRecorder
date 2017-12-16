@@ -10,6 +10,10 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBAction func recordAudio(_ sender: UIButton) {
+        //TODO: show text "recording in progress"
+        print("in record audio")
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
