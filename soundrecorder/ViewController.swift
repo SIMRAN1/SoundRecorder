@@ -10,9 +10,12 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var recordingInProgress: UILabel!
     @IBAction func recordAudio(_ sender: UIButton) {
         //TODO: show text "recording in progress"
+        recordingInProgress.isHidden=false
         print("in record audio")
+        
     }
     override func viewDidLoad() {
         super.viewDidLoad()
