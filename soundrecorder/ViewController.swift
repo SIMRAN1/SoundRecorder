@@ -11,6 +11,9 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var recordingInProgress: UILabel!
+    @IBAction func stopButton(_ sender: UIButton) {
+        recordingInProgress.isHidden=true
+    }
     @IBAction func recordAudio(_ sender: UIButton) {
         //TODO: show text "recording in progress"
         recordingInProgress.isHidden=false

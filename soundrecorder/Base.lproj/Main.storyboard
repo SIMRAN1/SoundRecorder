@@ -5,6 +5,7 @@
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -35,13 +36,22 @@
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uwX-N9-BeZ">
+                                <rect key="frame" x="162.5" y="602" width="50" height="50"/>
+                                <state key="normal" image="stop"/>
+                                <connections>
+                                    <action selector="stopButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lf8-mI-A4A"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="WoH-ew-M9Z" firstAttribute="top" secondItem="iDn-DX-n6b" secondAttribute="bottom" constant="24" id="4PB-7u-YdJ"/>
                             <constraint firstItem="iDn-DX-n6b" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VFG-QK-KLL"/>
+                            <constraint firstItem="uwX-N9-BeZ" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="cvK-7l-cJq"/>
                             <constraint firstItem="iDn-DX-n6b" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="g1z-tO-rqa"/>
                             <constraint firstItem="WoH-ew-M9Z" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="jii-Sq-7JO"/>
+                            <constraint firstItem="uwX-N9-BeZ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="bottom" constant="-40" id="o1T-jf-FNb"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -56,5 +66,6 @@
     </scenes>
     <resources>
         <image name="microphone" width="100" height="100"/>
+        <image name="stop" width="50" height="50"/>
     </resources>
 </document>
