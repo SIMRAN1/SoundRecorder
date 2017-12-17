@@ -14,9 +14,11 @@ class ViewController: UIViewController {
     @IBAction func stopButton(_ sender: UIButton) {
         recordingInProgress.isHidden=true
     }
+    @IBOutlet weak var stopButton: UIButton!
     @IBAction func recordAudio(_ sender: UIButton) {
         //TODO: show text "recording in progress"
         recordingInProgress.isHidden=false
+        stopButton.isHidden=false
         print("in record audio")
         
     }
@@ -28,6 +30,9 @@ class ViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        stopButton.isHidden=true
     }
 
 
