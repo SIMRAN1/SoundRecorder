@@ -101,6 +101,9 @@ class RecordSoundViewController: UIViewController,AVAudioRecorderDelegate {
             
         }
     }
+    override func viewWillDisappear(_ animated: Bool) {
+        recordButton.isEnabled = true
+    }
 
 }
 
