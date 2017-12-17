@@ -101,14 +101,32 @@
                                     <action selector="StopSound:" destination="0wO-oO-CGg" eventType="touchUpInside" id="MAy-Gg-qqm"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vH1-oh-S3l">
+                                <rect key="frame" x="38" y="284" width="100" height="87"/>
+                                <state key="normal" backgroundImage="chipmunk"/>
+                                <connections>
+                                    <action selector="playChipMunk:" destination="0wO-oO-CGg" eventType="touchUpInside" id="hpu-Vo-H1O"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GTc-sg-HHW">
+                                <rect key="frame" x="182" y="284" width="100" height="87"/>
+                                <state key="normal" image="dragon"/>
+                                <connections>
+                                    <action selector="playSoundDragon:" destination="0wO-oO-CGg" eventType="touchUpInside" id="2S2-AF-NQw"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="Ufv-Ck-JTj" firstAttribute="centerX" secondItem="4VD-da-IK3" secondAttribute="centerX" id="ARe-wo-nVQ"/>
+                            <constraint firstItem="GTc-sg-HHW" firstAttribute="top" secondItem="N6c-Wm-A6J" secondAttribute="bottom" constant="77" id="Kpm-4Q-IYw"/>
                             <constraint firstItem="4VD-da-IK3" firstAttribute="trailing" secondItem="N6c-Wm-A6J" secondAttribute="trailing" constant="38" id="P7B-HH-zPj"/>
+                            <constraint firstItem="4VD-da-IK3" firstAttribute="trailing" secondItem="GTc-sg-HHW" secondAttribute="trailing" constant="38" id="TCH-81-pxI"/>
                             <constraint firstItem="CpY-Ad-r6Q" firstAttribute="top" secondItem="4VD-da-IK3" secondAttribute="top" constant="43" id="fC8-Lc-dyf"/>
+                            <constraint firstItem="vH1-oh-S3l" firstAttribute="leading" secondItem="4VD-da-IK3" secondAttribute="leading" constant="38" id="hjw-m6-MsG"/>
                             <constraint firstItem="N6c-Wm-A6J" firstAttribute="top" secondItem="4VD-da-IK3" secondAttribute="top" constant="43" id="huK-dH-2t4"/>
                             <constraint firstItem="4VD-da-IK3" firstAttribute="bottom" secondItem="Ufv-Ck-JTj" secondAttribute="bottom" constant="52" id="rMV-6t-il5"/>
+                            <constraint firstItem="vH1-oh-S3l" firstAttribute="top" secondItem="MVt-Sd-nF1" secondAttribute="bottom" constant="75" id="sqe-YA-Tnb"/>
                             <constraint firstItem="CpY-Ad-r6Q" firstAttribute="leading" secondItem="4VD-da-IK3" secondAttribute="leading" constant="38" id="uNf-Vb-jdD"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="4VD-da-IK3"/>
@@ -116,7 +134,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Au0-hK-pvN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="44854" y="119"/>
+            <point key="canvasLocation" x="43275" y="62"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="rPE-6h-fdm">
@@ -139,6 +157,8 @@
     </scenes>
     <resources>
         <image name="Snail" width="100" height="100"/>
+        <image name="chipmunk" width="100" height="100"/>
+        <image name="dragon" width="100" height="100"/>
         <image name="microphone" width="100" height="100"/>
         <image name="rabbit" width="100" height="100"/>
         <image name="stop" width="50" height="50"/>

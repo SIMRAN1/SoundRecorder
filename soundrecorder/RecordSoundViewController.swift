@@ -71,7 +71,7 @@ class RecordSoundViewController: UIViewController,AVAudioRecorderDelegate {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        recordButton.isEnabled = true
         // Do any additional setup after loading the view, typically from a nib.
     }
 
